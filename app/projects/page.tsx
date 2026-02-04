@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Projects() {
   const projects = [
     {
@@ -221,12 +223,12 @@ export default function Projects() {
           <p className="text-xl text-blue-100 mb-10">
             Let's discuss how we can help bring your project to life
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             Get Started Today
-          </a>
+          </Link>
         </div>
       </section>
     </main>

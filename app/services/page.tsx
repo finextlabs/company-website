@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Services() {
   return (
     <main>
@@ -252,12 +254,12 @@ export default function Services() {
           <p className="text-xl text-blue-100 mb-10">
             Ready to transform your ideas into reality? Get in touch with our team today.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             Start Your Project
-          </a>
+          </Link>
         </div>
       </section>
     </main>
