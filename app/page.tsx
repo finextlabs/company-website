@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -18,18 +20,18 @@ export default function Home() {
             we deliver cutting-edge technology that drives growth.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <a
+            <Link
               href="/contact"
               className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
             >
               Start Your Project
-            </a>
-            <a
+            </Link>
+            <Link
               href="/projects"
               className="px-8 py-4 border-2 border-gray-700 rounded-lg font-semibold text-gray-300 hover:border-blue-600 hover:text-blue-400 transition-all duration-300"
             >
               View Our Work
-            </a>
+            </Link>
           </div>
           <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div>
@@ -193,12 +195,12 @@ export default function Home() {
           <p className="text-xl text-blue-100 mb-10">
             Let's discuss how we can help transform your ideas into reality
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       </section>
     </main>

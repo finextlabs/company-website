@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,19 +28,19 @@ export default function RootLayout({
       <body>
         <header className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
           <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               FinextLabs
-            </a>
+            </Link>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="/services" className="text-gray-300 hover:text-blue-400 font-medium transition-colors">
+              <Link href="/services" className="text-gray-300 hover:text-blue-400 font-medium transition-colors">
                 Services
-              </a>
-              <a href="/projects" className="text-gray-300 hover:text-blue-400 font-medium transition-colors">
+              </Link>
+              <Link href="/projects" className="text-gray-300 hover:text-blue-400 font-medium transition-colors">
                 Projects
-              </a>
-              <a href="/contact" className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-blue-500/50 transition-all">
+              </Link>
+              <Link href="/contact" className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-blue-500/50 transition-all">
                 Contact Us
-              </a>
+              </Link>
             </div>
             <button className="md:hidden text-gray-300">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,19 +66,19 @@ export default function RootLayout({
               <div>
                 <h3 className="font-bold mb-4">Services</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><a href="/services" className="hover:text-white transition-colors">Web Development</a></li>
-                  <li><a href="/services" className="hover:text-white transition-colors">Mobile Apps</a></li>
-                  <li><a href="/services" className="hover:text-white transition-colors">Cloud Solutions</a></li>
-                  <li><a href="/services" className="hover:text-white transition-colors">UI/UX Design</a></li>
+                  <li><Link href="/services" className="hover:text-white transition-colors">Web Development</Link></li>
+                  <li><Link href="/services" className="hover:text-white transition-colors">Mobile Apps</Link></li>
+                  <li><Link href="/services" className="hover:text-white transition-colors">Cloud Solutions</Link></li>
+                  <li><Link href="/services" className="hover:text-white transition-colors">UI/UX Design</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold mb-4">Company</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><a href="/" className="hover:text-white transition-colors">About Us</a></li>
-                  <li><a href="/projects" className="hover:text-white transition-colors">Projects</a></li>
-                  <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
-                  <li><a href="/" className="hover:text-white transition-colors">Careers</a></li>
+                  <li><Link href="/" className="hover:text-white transition-colors">About Us</Link></li>
+                  <li><Link href="/projects" className="hover:text-white transition-colors">Projects</Link></li>
+                  <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+                  <li><Link href="/" className="hover:text-white transition-colors">Careers</Link></li>
                 </ul>
               </div>
               <div>
